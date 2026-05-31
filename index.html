@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Pedro Henrique Windisch</title>
 
-  <!-- Goudy Bookletter 1911 -->
   <style>
     @font-face {
       font-family: "Goudy Bookletter 1911";
@@ -13,80 +12,80 @@
       font-weight: 400;
       src: url("https://cdn.jsdelivr.net/fontsource/fonts/goudy-bookletter-1911@latest/latin-400-normal.woff2") format("woff2");
     }
-    
-    html, body { height: 100% } 
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
 
     body {
       font-family: "Goudy Bookletter 1911", serif;
-      background-color: #ffffff;
+      background: #fff;
       color: #333;
-      margin: 0;
-      line-height: 1;
       display: flex;
-      flex-direction:
-        column;
-      height: 100dvh;
-      padding: 6vw;
+      justify-content: center;
+      align-items: center;
+      min-height: 100dvh;
+      padding: 2rem;
       box-sizing: border-box;
     }
 
-    h1 {
-      font-size: 1.8rem;
-      font-weight: normal;
-      margin: 0;
+    main {
+      text-align: center;
     }
-    
-    header {
-      margin-bottom: 1.5rem;
+
+    img {
+      display: block;
+      margin: 0 auto 2.5rem;
+      width: 220px;
+      height: auto;
     }
-    
-    header > p {
-      margin: 0 !important;
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.3rem;
     }
 
     a {
       color: #555;
       text-decoration: none;
+      font-size: 1rem;
+      line-height: 1.6;
     }
 
     a:hover {
       color: #000;
     }
 
-    p {
-      margin: 0.4rem 0;
-    }
-
     .email {
       margin-top: 1.5rem;
-      color: #777;
+      color: #999;
+      font-size: 0.85rem;
     }
-    
-    footer {
-      margin-top: auto;
+
+    @media (max-width: 600px) {
+      img {
+        width: 160px;
+        margin-bottom: 2rem;
+      }
     }
   </style>
 </head>
 <body>
-  <header> 
-    <h1>Pedro H. Windisch</h1>
-    <p>Developer, cinephile, weekend cyclist, runner.</p>
-  </header>
-  
-  <p><a href="https://letterboxd.com/pedrowindisch/">Letterboxd</a></p>
-  <p><a href="https://www.instagram.com/pedrowindisch">Instagram</a></p>
-  <p><a href="https://github.com/pedrowindisch/">GitHub</a></p>
-  <p><a href="https://www.linkedin.com/in/pedrowindisch/">LinkedIn</a></p>
-  <p><a href="https://www.strava.com/athletes/127655882">Strava</a></p>
-  <p><a href="https://www.goodreads.com/user/show/118576377-pedro-henrique-windisch">Goodreads (haven't updated in a while)</a></p>
-  
-  <p class="email"><a href="mailto:pedro@windisch.com.br">pedro@windisch.com.br</a></p>
-  
-  <footer>
-    <p>Je suis la plaie et le couteau!</p>
-    <p>Je suis le soufflet et la joue!</p>
-    <p>Je suis les membres et la roue,</p>
-    <p>Et la victime et le bourreau!</p>
-  </footer>
+  <main>
+    <img src="images/spitz.jpg" alt="Spitzkopf">
+    <nav>
+      <a href="https://letterboxd.com/pedrowindisch/">Letterboxd</a>
+      <a href="https://www.instagram.com/pedrowindisch">Instagram</a>
+      <a href="https://github.com/pedrowindisch/">GitHub</a>
+      <a href="https://www.linkedin.com/in/pedrowindisch/">LinkedIn</a>
+      <a href="https://www.strava.com/athletes/127655882">Strava</a>
+      <a href="https://www.goodreads.com/user/show/118576377-pedro-henrique-windisch">Goodreads</a>
+      <a class="email" href="mailto:pedro@windisch.com.br">pedro@windisch.com.br</a>
+    </nav>
+  </main>
 </body>
 </html>
